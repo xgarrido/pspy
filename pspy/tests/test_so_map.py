@@ -34,7 +34,7 @@ class SOMapTests(unittest.TestCase):
         ra0, ra1, dec0, dec1 = -1, 2, -3, 4
         so_map1 = so_map.car_template(ncomp, ra0, ra1, dec0, dec1, res)
         so_map2 = so_map1.copy()
-        maps_are_equal(so_map1, so_map2)
+        are_maps_equal(so_map1, so_map2)
 
     # def test_car_synfast(self):
     #     # Fix seed
