@@ -44,7 +44,7 @@ jobs:
 
     - name: Unit tests
       run: |
-        python -m pytest -vv pspy --cov=pspy --cov-report=xml:coverage.xml
+        pytest -vv pspy --cov=pspy --cov-report=xml:coverage.xml
 
     - name: Report Coverage (codecov)
       if: matrix.os == 'ubuntu-latest'
